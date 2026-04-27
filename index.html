@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audrey Rah Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #03080f;
+      color: white;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .bg-glow {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .bg-glow-1 { width: 500px; height: 500px; background: rgba(0,212,255,0.06); top: -150px; right: -150px; }
+    .bg-glow-2 { width: 400px; height: 400px; background: rgba(124,58,237,0.06); bottom: -100px; left: -100px; }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(135deg, #080f1a 0%, #0d1829 100%);
+      border: 1px solid rgba(0,212,255,0.15);
+      border-radius: 24px;
+      padding: 60px 56px 52px;
+      max-width: 520px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 0 60px rgba(0,212,255,0.07), 0 24px 64px rgba(0,0,0,0.5);
+    }
+
+    .eyebrow {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #00d4ff;
+      margin-bottom: 18px;
+      opacity: 0.85;
+    }
+
+    .name {
+      font-family: 'Space Mono', monospace;
+      font-size: 2.6rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #00d4ff 0%, #7c3aed 55%, #10b981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .tagline {
+      color: #94a3b8;
+      font-size: 0.88rem;
+      letter-spacing: 1px;
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .tag {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.68rem;
+      padding: 5px 13px;
+      border-radius: 6px;
+      border: 1px solid;
+      letter-spacing: 0.5px;
+    }
+    .t1 { background: rgba(0,212,255,0.1);  border-color: rgba(0,212,255,0.3);  color: #4de8ff; }
+    .t2 { background: rgba(239,68,68,0.1);  border-color: rgba(239,68,68,0.3);  color: #fca5a5; }
+    .t3 { background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.3); color: #34d399; }
+    .t4 { background: rgba(124,58,237,0.1); border-color: rgba(124,58,237,0.3); color: #c4b5fd; }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(0,212,255,0.2), transparent);
+      margin-bottom: 36px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #00d4ff, #0891b2);
+      color: #020810;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 36px;
+      border-radius: 10px;
+      box-shadow: 0 0 28px rgba(0,212,255,0.3);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .btn:hover {
+      box-shadow: 0 0 44px rgba(0,212,255,0.5);
+      transform: translateY(-2px);
+    }
+
+    .footer {
+      margin-top: 32px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 3px;
+      color: #1e3a4a;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <div class="card">
+    <div class="eyebrow">// Portfolio</div>
+    <div class="name">AUDREY RAH</div>
+    <div class="tagline">Data Architect &nbsp;·&nbsp; Cyber Security &nbsp;·&nbsp; ETL &nbsp;·&nbsp; AI</div>
+
+    <div class="tags">
+      <span class="tag t1">Data Architecture</span>
+      <span class="tag t2">Cyber Security</span>
+      <span class="tag t3">ETL Pipelines</span>
+      <span class="tag t4">AI Research</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <a href="https://audreytech2020-audrey-portfolio.hf.space" target="_blank" class="btn">
+      View Portfolio
+    </a>
+
+    <div class="footer">University of Houston &nbsp;·&nbsp; UIT</div>
+  </div>
+</body>
+</html>
+
